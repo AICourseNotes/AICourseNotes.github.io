@@ -6,6 +6,16 @@ theme:
     - navigation.expand
     - navigation.sections
     - toc.integrate
+  palette:
+    - scheme: default      # light mode
+      primary: indigo      # main colour
+      accent: pink         # highlight colour (links, etc.)
+    - scheme: slate        # dark mode
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
 
 markdown_extensions:
   - admonition
