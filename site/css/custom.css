@@ -1,0 +1,20 @@
+/* Light mode overrides */
+:root {
+  /* primary colour */
+  --md-primary-fg-color: #003366;         /* your brand blue */
+  --md-primary-fg-color--light: #336699;
+  --md-primary-fg-color--dark: #001a33;
+
+  /* accent colour */
+  --md-accent-fg-color: #cc3300;          /* your brand accent */
+
+  /* optional: background, text, etc. */
+  /* --md-default-bg-color: #ffffff; */
+  /* --md-default-fg-color: #222222; */
+}
+
+/* Dark mode overrides (if you use a dark scheme) */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #66a3ff;
+  --md-accent-fg-color: #ff9966;
+}

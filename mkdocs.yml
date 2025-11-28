@@ -9,10 +9,10 @@ theme:
   palette:
     - scheme: default      # light mode
       primary: indigo      # main colour
-      accent: pink         # highlight colour (links, etc.)
+      accent: default         # highlight colour (links, etc.)
     - scheme: slate        # dark mode
       primary: indigo
-      accent: pink
+      accent: default
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -28,6 +28,9 @@ markdown_extensions:
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - css/custom.css  
 
 nav:
   - Home: index.md
