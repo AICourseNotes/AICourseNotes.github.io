@@ -1,0 +1,36 @@
+site_name: AI Course Notes
+site_url: https://aicoursenotes.github.io/
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.sections
+    - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Chapters:
+      - "Chapter 1":
+          - Overview: chapters/chapter1/index.md
+          - "Section 1":
+              - Overview: chapters/chapter1/section1/index.md
+              - Page 1: chapters/chapter1/section1/page1.md
+              - Page 2: chapters/chapter1/section1/page2.md
+          - "Section 2":
+              - Overview: chapters/chapter1/section2/index.md
+              - Page 1: chapters/chapter1/section2/page1.md
+      - "Chapter 2":
+          - Overview: chapters/chapter2/index.md
