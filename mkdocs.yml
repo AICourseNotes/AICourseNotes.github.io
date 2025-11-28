@@ -7,15 +7,15 @@ theme:
     - navigation.sections
     - toc.integrate
   palette:
-    - scheme: default      # light mode
-      primary: indigo      # main colour
-      accent: default         # highlight colour (links, etc.)
-    - scheme: slate        # dark mode
-      primary: indigo
-      accent: default
+    - scheme: default
       toggle:
         icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
         name: Switch to light mode
+
 
 markdown_extensions:
   - admonition
@@ -35,14 +35,18 @@ extra_css:
 nav:
   - Home: index.md
   - Chapters:
-      - "Chapter 1":
-          - Overview: chapters/chapter1/index.md
-          - "Section 1":
-              - Overview: chapters/chapter1/section1/index.md
-              - Page 1: chapters/chapter1/section1/page1.md
-              - Page 2: chapters/chapter1/section1/page2.md
-          - "Section 2":
-              - Overview: chapters/chapter1/section2/index.md
-              - Page 1: chapters/chapter1/section2/page1.md
-      - "Chapter 2":
-          - Overview: chapters/chapter2/index.md
+      - "Foundations":
+          - Overview: chapters/1. Foundations/Foundations.md
+          - "Probability Theory":
+              - Overview: chapters/1. Foundations/1. Probability Theory/0_Probability_Theory.md
+              - Page 1: chapters/1. Foundations/1. Probability Theory/page1.md
+              - Page 2: chapters/1. Foundations/1. Probability Theory/page2.md
+          - "Statistical Inference":
+              - Overview: chapters/1. Foundations/2. Statistical Inference/0_Statistical_Inference.md
+              - Page 1: chapters/1. Foundations/2. Statistical Inference/page1.md
+          - "Linear Algebra":
+              - Overview: chapters/1. Foundations/3. Linear Algebra/index.md
+      - "Supervised Learning":
+          - Overview: chapters/2. Supervised Learning/index.md
+      - "Unsupervised Learning":
+          - Overview: chapters/3. Unsupervised Learning/index.md

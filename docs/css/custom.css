@@ -1,20 +1,17 @@
-/* Light mode overrides */
-:root {
-  /* primary colour */
-  --md-primary-fg-color: #003366;         /* your brand blue */
+/* Light mode (scheme: default) */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #003366;
   --md-primary-fg-color--light: #336699;
   --md-primary-fg-color--dark: #001a33;
 
-  /* accent colour */
-  --md-accent-fg-color: #cc3300;          /* your brand accent */
-
-  /* optional: background, text, etc. */
-  /* --md-default-bg-color: #ffffff; */
-  /* --md-default-fg-color: #222222; */
+  --md-accent-fg-color: #cc3300;
 }
 
-/* Dark mode overrides (if you use a dark scheme) */
+/* Dark mode (scheme: slate) */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #66a3ff;
+  --md-primary-fg-color--light: #99c2ff;
+  --md-primary-fg-color--dark: #335c99;
+
   --md-accent-fg-color: #ff9966;
 }
