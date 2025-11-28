@@ -18,3 +18,8 @@
   --md-primary-fg-color: #66a3ff;
   --md-accent-fg-color: #ff9966;
 }
+
+/* TEMPORARY TEST RULE */
+.md-header {
+  border-bottom: 4px solid red;
+}
