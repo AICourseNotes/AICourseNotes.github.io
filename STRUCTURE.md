@@ -1,7 +1,10 @@
 # Course Notes Structure
+### Legends
+[ Priority ] - Needs to be completed before semester 1 starts.
 
-## Foundations
-- An Introduction to AI
+
+## Foundations [ Priority ]
+- An Introduction to AI  
     - Machine Learning: Overview and Motivation
     - Learning from data
     - Prediction vs Inference vs Decision Making
@@ -19,6 +22,8 @@
 - Statistical Inference
     - Estimation (MLE, MAP)
     - Bias – Variance
+    - Covarariance Matrix
+    - Correlation
     - Confidence intervals and uncertainty
 - Linear Algebra
     - Vectors, matrices
@@ -32,30 +37,35 @@
     - A first look at Gradient Descent
 
 ## Data
-- Data Types and Structures
-- Exploratory Data Analysis (EDA)
-- Data Cleaning and Preprocessing
+- Data Types and Structures [ Priority ]
+- Exploratory Data Analysis (EDA) [ Priority ]
+- Data Cleaning and Preprocessing [ Priority ]
     - Missing values
     - Normalisation and standardisation
-    - Encoding categorical variables
+    - Encoding categorical variables (One-hot)
     - Train/validation/test splits
-- Feature Engineering and Selection
+- Feature Engineering and Selection [ Priority ] 
 - Dimensionality Reduction (PCA introduced here conceptually)
 
 ## Statistical Learning Theory
 - Learning as Function Approximation
-- Loss Functions and Risk Minimisation
-- Empirical Risk Minimisation
-- Generalisation, Overfitting, and Underfitting
-- Regularisation (L1, L2)
-- Bias–Variance Revisited with Examples
+- Loss Functions and Risk Minimisation 
+- Empirical Risk Minimisation 
+- Generalisation, Overfitting, and Underfitting [ Priority ]
+- Regularisation (L1, L2) 
+- Bias–Variance Revisited with Examples  [ Priority ]
+- Generalisation Gap [ Priority ]
 
-## Supervised Learning 
+## Supervised Learning  [ Priority ]
 - Supervised Learning Framework
-- Linear Regression
+- KNN
+- Decision Trees
+- Linear Regression 
     - Closed-form solution
     - Gradient-based optimisation
     - Regularised regression (Ridge, Lasso)
+- Polynomial Regression
+    - Regularised regression
 - Classification
     - Logistic regression
     - Softmax regression
@@ -67,7 +77,7 @@
     - Hyperparameter tuning
     - Learning curves
 
-## Unsupervised Learning
+## Unsupervised Learning [ Priority ]
 - Clustering
     - K-means
     - Hierarchical clustering
@@ -75,6 +85,7 @@
 - Dimensionality Reduction
     - PCA
     - Introduction to Kernel PCA
+    - PCA with SVD
 - Mixture Models
     - Gaussian Mixture Models
     - Expectation–Maximisation (EM algorithm)
@@ -85,28 +96,30 @@
 - Consistency Regularisation
 - Graph-based Semi-supervised Methods
 
-## Learning Parametric Models
+## Learning Parametric Models [ Priority ]
 - Parametric vs Nonparametric Models
 - Maximum Likelihood in Parametric Settings
 - Exponential Family Models
 - Generalised Linear Models
+- Second order gradient methods.
 
-## Artificial Neural Networks
+## Artificial Neural Networks [ Priority ]
 - The Perceptron
 - Multi-layer Perceptrons (MLPs)
 - Activation Functions
 - Backpropagation (Derivation and Examples)
 - Optimisation Algorithms (SGD, Momentum, Adam)
-- Regularisation in Neural Nets (Dropout, Weight Decay)
+- Implicit Regularisation in Neural Nets (Dropout)
+- Explicit Regularisation in Neural Nets (Weight Decay)
 
-## Deep Learning
-- Representation Learning
-- Convolutional Neural Networks
-- Recurrent Networks & Sequence Models
+## Deep Learning 
+- Representation Learning [ Priority ]
+- Convolutional Neural Networks [ Priority ]
+- Recurrent Networks & Sequence Models 
 - Modern Architectures (Transformers - conceptual)
-- Training Dynamics and Practical Tricks
+- Training Dynamics and Practical Tricks [ Priority ]
 
-## Ensemble Methods
+## Ensemble Methods [ Priority ]
 - Bagging and Bootstrap Aggregation
 - Random Forests
 - Boosting
@@ -114,26 +127,26 @@
     - Gradient Boosting
     - XGBoost / LightGBM (conceptual mechanics)
 
-## Kernel Methods
+## Kernel Methods  [ Priority ]
 - The Kernel Trick
 - Support Vector Machines
 - Kernel Ridge Regression
 - Kernel PCA (full revisit)
 
-## Gaussian Processes
+## Gaussian Processes [ Priority ]
 - Nonparametric Bayesian Modelling
 - Covariance Functions and Kernels
-- GP Regression
-- GP Classification
+- GP Regression [ Priority ]
+- GP Classification  [ Priority ]
 
-## Generative Models
+## Generative Models [ Priority ]
 - Generative vs Discriminative Models
 - Latent Variable Models
 - Variational Autoencoders
-- GANs
+- Generative Adversarial Networks (GANs)
 - Normalising Flows
 
-## Performance
+## Performance [ Priority ]
 - Model Evaluation Revisited: Robustness & Stability
 - Calibration
 - Fairness, Bias, Ethical Considerations
