@@ -1,24 +1,18 @@
-/* Light mode (scheme: default) */
-[data-md-color-scheme="default"] {
-  --md-primary-fg-color: #5c59b7;        /* primary */
-  --md-primary-fg-color--light: #8a87d6; /* lighter indigo */
-  --md-primary-fg-color--dark: #3f3c8f;  /* darker indigo */
-
-  --md-accent-fg-color: #ff9966;         /* keep accent as requested */
-}
-
-/* Dark mode (scheme: slate) */
+/* Normal DARK (Material scheme: slate) */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #8f8ce6;        /* lifted primary for dark bg */
-  --md-primary-fg-color--light: #b6b4f0; /* readable hover/active */
-  --md-primary-fg-color--dark: #5c59b7;  /* anchor colour */
-
-  --md-accent-fg-color: #ff9966;         /* unchanged */
+  --md-primary-fg-color: #5c59b7;
+  --md-primary-fg-color--light: #8a87d6;
+  --md-primary-fg-color--dark: #3f3c8f;
+  --md-accent-fg-color: #ff9966;
 }
 
-/* ─────────────────────────────────────────
-   Textbook-style sidebar refinement
-   ───────────────────────────────────────── */
+/* Normal LIGHT (Material scheme: default) */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #5c59b7;
+  --md-primary-fg-color--light: #8a87d6;
+  --md-primary-fg-color--dark: #3f3c8f;
+  --md-accent-fg-color: #ff9966;
+}
 
 /* Top-level topic styling */
 .md-nav__item--section > .md-nav__link {
@@ -36,8 +30,7 @@
 }
 
 /* Dark mode divider */
-[data-md-color-scheme="slate"]
-.md-nav__item--section > .md-nav__list > .md-nav__item {
+[data-md-color-scheme="slate"] .md-nav__item--section > .md-nav__list > .md-nav__item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
@@ -57,14 +50,9 @@
   opacity: 0.7;
 }
 
-/* ─────────────────────────────────────────
-   Active page "pill" highlight
-   ───────────────────────────────────────── */
-
-/* Light mode */
-[data-md-color-scheme="default"]
-.md-nav__link--active {
-  background-color: rgba(92, 89, 183, 0.10); /* primary-tinted pill */
+/* Light mode active link styling */
+[data-md-color-scheme="default"] .md-nav__link--active {
+  background-color: rgba(92, 89, 183, 0.10);
   border-radius: 0.6rem;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
@@ -72,9 +60,8 @@
   margin-right: -0.3rem;
 }
 
-/* Dark mode */
-[data-md-color-scheme="slate"]
-.md-nav__link--active {
+/* Dark mode active link styling */
+[data-md-color-scheme="slate"] .md-nav__link--active {
   background-color: rgba(143, 140, 230, 0.18);
   border-radius: 0.6rem;
   padding-left: 0.6rem;

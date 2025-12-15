@@ -1,18 +1,16 @@
-/* Light mode (scheme: default) */
-[data-md-color-scheme="default"] {
-  --md-primary-fg-color: #003366;
-  --md-primary-fg-color--light: #336699;
-  --md-primary-fg-color--dark: #001a33;
-
-  --md-accent-fg-color: #cc3300;
+/* Normal DARK (Material scheme: slate) */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #5c59b7;
+  --md-primary-fg-color--light: #8a87d6;
+  --md-primary-fg-color--dark: #3f3c8f;
+  --md-accent-fg-color: #ff9966;
 }
 
-/* Dark mode (scheme: slate) */
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #66a3ff;
-  --md-primary-fg-color--light: #99c2ff;
-  --md-primary-fg-color--dark: #335c99;
-
+/* Normal LIGHT (Material scheme: default) */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #5c59b7;
+  --md-primary-fg-color--light: #8a87d6;
+  --md-primary-fg-color--dark: #3f3c8f;
   --md-accent-fg-color: #ff9966;
 }
 
@@ -32,8 +30,7 @@
 }
 
 /* Dark mode divider */
-[data-md-color-scheme="slate"]
-.md-nav__item--section > .md-nav__list > .md-nav__item {
+[data-md-color-scheme="slate"] .md-nav__item--section > .md-nav__list > .md-nav__item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
@@ -53,10 +50,9 @@
   opacity: 0.7;
 }
 
-/* Light mode */
-[data-md-color-scheme="default"] 
-.md-nav__link--active {
-  background-color: rgba(0, 51, 102, 0.08); /* soft primary tint */
+/* Light mode active link styling */
+[data-md-color-scheme="default"] .md-nav__link--active {
+  background-color: rgba(92, 89, 183, 0.10);
   border-radius: 0.6rem;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
@@ -64,10 +60,9 @@
   margin-right: -0.3rem;
 }
 
-/* Dark mode */
-[data-md-color-scheme="slate"] 
-.md-nav__link--active {
-  background-color: rgba(102, 163, 255, 0.15);
+/* Dark mode active link styling */
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  background-color: rgba(143, 140, 230, 0.18);
   border-radius: 0.6rem;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
