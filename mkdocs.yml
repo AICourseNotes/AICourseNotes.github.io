@@ -33,91 +33,174 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Chapters:
-      - Foundations:
-        - "An Introduction to AI": chapters/0. Foundations/0. Introduction.md
-        - "Definitions and Notation": chapters/0. Foundations/1. Definitions and Notation.md
+  - Topics:
+    - Foundations:
+      - "An Introduction to AI": chapters/0. Foundations/0. Introduction.md
+      - "Definitions and Notation": chapters/0. Foundations/1. Definitions and Notation.md
 
-        - Probability Theory:
-          - "Random variables": chapters/0. Foundations/2. Probability Theory/0. Random Variables.md
-          - "Distributions": chapters/0. Foundations/2. Probability Theory/1. Distributions.md
-          - "Expectation and Variance": chapters/0. Foundations/2. Probability Theory/2. Expectation and Variance.md
-          - "Bayes' Theorem": chapters/0. Foundations/2. Probability Theory/3. Bayes Theorem.md
+      - Probability Theory:
+        - "Random variables": chapters/0. Foundations/2. Probability Theory/0. Random Variables.md
+        - "Distributions": chapters/0. Foundations/2. Probability Theory/1. Distributions.md
+        - "Expectation and Variance": chapters/0. Foundations/2. Probability Theory/2. Expectation and Variance.md
+        - "Bayes' Theorem": chapters/0. Foundations/2. Probability Theory/3. Bayes Theorem.md
 
-        - Statistical Inference:
-          - "Point Estimation": chapters/0. Foundations/3. Statistical Inference/0. Point Estimation.md
-          - "Bias vs Variance": chapters/0. Foundations/3. Statistical Inference/1. Bias vs Variance.md
-          - "Covarariance": chapters/0. Foundations/3. Statistical Inference/2. Covarariance.md
-          - "Correlation vs Causation": chapters/0. Foundations/3. Statistical Inference/3. Correlation vs Causation.md
-          - "Confidence Intervals and Uncertainty": chapters/0. Foundations/3. Statistical Inference/4. CI and Uncertainty.md 
+      - Statistical Inference:
+        - "Point Estimation": chapters/0. Foundations/3. Statistical Inference/0. Point Estimation.md
+        - "Bias vs Variance": chapters/0. Foundations/3. Statistical Inference/1. Bias vs Variance.md
+        - "Covarariance": chapters/0. Foundations/3. Statistical Inference/2. Covarariance.md
+        - "Correlation vs Causation": chapters/0. Foundations/3. Statistical Inference/3. Correlation vs Causation.md
+        - "Confidence Intervals and Uncertainty": chapters/0. Foundations/3. Statistical Inference/4. CI and Uncertainty.md 
 
-        - Linear Algebra:
-          - "Vectors and Matrices": chapters/0. Foundations/4. Linear Algebra/0. Vectors and Matrices.md
-          - "Matrix Operations": chapters/0. Foundations/4. Linear Algebra/1. Matrix Operations.md
-          - "Linear Transformations": chapters/0. Foundations/4. Linear Algebra/2. Linear Transformations.md
-          - "Eigenvalues and Eigenvectors": chapters/0. Foundations/4. Linear Algebra/3. Eigenvalues and Eigenvectors.md
-          - "Singular Value Decomposition (SVD)": chapters/0. Foundations/4. Linear Algebra/4. SVD.md
+      - Linear Algebra:
+        - "Vectors and Matrices": chapters/0. Foundations/4. Linear Algebra/0. Vectors and Matrices.md
+        - "Matrix Operations": chapters/0. Foundations/4. Linear Algebra/1. Matrix Operations.md
+        - "Linear Transformations": chapters/0. Foundations/4. Linear Algebra/2. Linear Transformations.md
+        - "Eigenvalues and Eigenvectors": chapters/0. Foundations/4. Linear Algebra/3. Eigenvalues and Eigenvectors.md
+        - "Singular Value Decomposition (SVD)": chapters/0. Foundations/4. Linear Algebra/4. SVD.md
 
-        - Calculus and Optimisation Basics:
-          - "Gradients": chapters/0. Foundations/5. Calculus and Optimisation Basics/0. Gradients.md
-          - "The Chain Rule": chapters/0. Foundations/5. Calculus and Optimisation Basics/1. Chain Rule.md
-          - "Convexity": chapters/0. Foundations/5. Calculus and Optimisation Basics/2. Convexity.md
-          - "Introduction to Graduient Descent": chapters/0. Foundations/5. Calculus and Optimisation Basics/3. Intro Gradient Descent.md
+      - Calculus and Optimisation Basics:
+        - "Gradients": chapters/0. Foundations/5. Calculus and Optimisation Basics/0. Gradients.md
+        - "The Chain Rule": chapters/0. Foundations/5. Calculus and Optimisation Basics/1. Chain Rule.md
+        - "Convexity": chapters/0. Foundations/5. Calculus and Optimisation Basics/2. Convexity.md
+        - "Introduction to Graduient Descent": chapters/0. Foundations/5. Calculus and Optimisation Basics/3. Intro Gradient Descent.md
       
-      - Data:
-        - Data Types and Structures:
-          - "Tabular Data": chapters/1. Data/0. Data Types and Structures/0. Tabular Data.md
-          - "Time Series Data": chapters/1. Data/0. Data Types and Structures/1. Time Series Data.md
-          - "Image Data": chapters/1. Data/0. Data Types and Structures/2. Image Data.md
+    - Data:
+      - Data Types and Structures:
+        - "Tabular Data": chapters/1. Data/0. Data Types and Structures/0. Tabular Data.md
+        - "Time Series Data": chapters/1. Data/0. Data Types and Structures/1. Time Series Data.md
+        - "Image Data": chapters/1. Data/0. Data Types and Structures/2. Image Data.md
         
-        - Exploratory Data Analysis (EDA):
-          - "Data Visualisation": chapters/1. Data/1. Exploratory Data Analysis/0. Data Visualisation.md
-          - "Statistical Summaries": chapters/1. Data/1. Exploratory Data Analysis/1. Statistical Summaries.md
+      - Exploratory Data Analysis (EDA):
+        - "Data Visualisation": chapters/1. Data/1. Exploratory Data Analysis/0. Data Visualisation.md
+        - "Statistical Summaries": chapters/1. Data/1. Exploratory Data Analysis/1. Statistical Summaries.md
         
-        - Preprocessing:
-          - "Data Cleaning": chapters/1. Data/2. Preprocessing/0. Data Cleaning.md
-          - "Enconding Categorical Variables": chapters/1. Data/2. Preprocessing/1. Encoding Categorical Variables.md
-          - "Feature Engineering": chapters/1. Data/2. Preprocessing/2. Feature Engineering.md
-          - "Normalisation and Standardisation": chapters/1. Data/2. Preprocessing/3. Data Normalisation.md
-          - "Dimensionality Reduction": chapters/1. Data/2. Preprocessing/4. Dimensionality Reduction.md
+      - Preprocessing:
+        - "Data Cleaning": chapters/1. Data/2. Preprocessing/0. Data Cleaning.md
+        - "Enconding Categorical Variables": chapters/1. Data/2. Preprocessing/1. Encoding Categorical Variables.md
+        - "Feature Engineering": chapters/1. Data/2. Preprocessing/2. Feature Engineering.md
+        - "Normalisation and Standardisation": chapters/1. Data/2. Preprocessing/3. Data Normalisation.md
+        - "Dimensionality Reduction": chapters/1. Data/2. Preprocessing/4. Dimensionality Reduction.md
 
-      - Statistical Learning Theory:
-        - "Learning as Function Approximation": chapters/2. Statistical Learning Theory/0. Learning as Function Approximation.md
-        - "Loss Functions and Risk Minimisation": chapters/2. Statistical Learning Theory/1. Loss Functions and Risk Minimisation.md
-        - "Empirical Risk Minimisation:": chapters/2. Statistical Learning Theory/2. Empirical Risk Minimisation.md
-        - "Generalisation, Overfitting, and Underfitting": chapters/2. Statistical Learning Theory/3. OverUnder fitting.md
-        - "Regularisation": chapters/2. Statistical Learning Theory/4. Regularisation.md
-        - "Bias-Variance Tradeoff": chapters/2. Statistical Learning Theory/5. Bias-Variance Tradeoff.md
-        - "No Free Lunch Theorem": chapters/2. Statistical Learning Theory/6. No Free Lunch Theorem.md
-        - "Generalisation Gap": chapters/2. Statistical Learning Theory/7. Generalisation Gap.md
-        - "VC Dimension": chapters/2. Statistical Learning Theory/8. VC Dimension.md
-        - "PAC Learning": chapters/2. Statistical Learning Theory/9. PAC Learning.md
+    - Statistical Learning Theory:
+      - "Learning as Function Approximation": chapters/2. Statistical Learning Theory/0. Learning as Function Approximation.md
+      - "Loss Functions and Risk Minimisation": chapters/2. Statistical Learning Theory/1. Loss Functions and Risk Minimisation.md
+      - "Empirical Risk Minimisation": chapters/2. Statistical Learning Theory/2. Empirical Risk Minimisation.md
+      - "Generalisation, Overfitting, and Underfitting": chapters/2. Statistical Learning Theory/3. OverUnder fitting.md
+      - "Regularisation": chapters/2. Statistical Learning Theory/4. Regularisation.md
+      - "Bias-Variance Tradeoff": chapters/2. Statistical Learning Theory/5. Bias-Variance Tradeoff.md
+      - "No Free Lunch Theorem": chapters/2. Statistical Learning Theory/6. No Free Lunch Theorem.md
+      - "Generalisation Gap": chapters/2. Statistical Learning Theory/7. Generalisation Gap.md
+      - "VC Dimension": chapters/2. Statistical Learning Theory/8. VC Dimension.md
+      - "PAC Learning": chapters/2. Statistical Learning Theory/9. PAC Learning.md
 
-      - Supervised Learning:
-        - "Supervised Learning Framework": chapters/3. Supervised Learning/0. Supervised Learning Framework.md
+    - Supervised Learning:
+      - "Supervised Learning Framework": chapters/3. Supervised Learning/0. Supervised Learning Framework.md
 
-        - Non-Parametric Models:
-          - "k-Nearest Neighbors (k-NN)": chapters/3. Supervised Learning/1. Non-Parametric Models/0. k-NN.md
-          - "Decision Trees": chapters/3. Supervised Learning/1. Non-Parametric Models/1. Decision Trees.md
-          - "Random Forests": chapters/3. Supervised Learning/1. Non-Parametric Models/2. Random Forests.md
+      - Non-Parametric Models:
+        - "k-Nearest Neighbors (k-NN)": chapters/3. Supervised Learning/1. Non-Parametric Models/0. k-NN.md
+        - "Decision Trees": chapters/3. Supervised Learning/1. Non-Parametric Models/1. Decision Trees.md
+        - "Random Forests": chapters/3. Supervised Learning/1. Non-Parametric Models/2. Random Forests.md
 
-        - Regression Models:
-          - "Linear Regression": chapters/3. Supervised Learning/2. Regression Models/0. Linear Regression.md
-          - "Polynomial Regression": chapters/3. Supervised Learning/2. Regression Models/1. Polynomial Regression.md
-          - "Ridge and Lasso Regression": chapters/3. Supervised Learning/2. Regression Models/2. Ridge and Lasso.md
+      - Regression Models:
+        - "Linear Regression": chapters/3. Supervised Learning/2. Regression Models/0. Linear Regression.md
+        - "Polynomial Regression": chapters/3. Supervised Learning/2. Regression Models/1. Polynomial Regression.md
+        - "Ridge and Lasso Regression": chapters/3. Supervised Learning/2. Regression Models/2. Ridge and Lasso.md
 
-        - Classification Models:
-          - "Logistic Regression": chapters/3. Supervised Learning/3. Classification Models/0. Logistic Regression.md
-          - "Support Vector Machines (SVMs)": chapters/3. Supervised Learning/3. Classification Models/1. SVMs.md
-          - "Naive Bayes Classifier": chapters/3. Supervised Learning/3. Classification Models/2. Naive Bayes.md
+      - Classification Models:
+        - "Logistic Regression": chapters/3. Supervised Learning/3. Classification Models/0. Logistic Regression.md
+        - "Support Vector Machines (SVMs)": chapters/3. Supervised Learning/3. Classification Models/1. SVMs.md
+        - "Naive Bayes Classifier": chapters/3. Supervised Learning/3. Classification Models/2. Naive Bayes.md
 
-        - Evaluation Metrics:
-          - "Confusion Matrix": chapters/3. Supervised Learning/4. Evaluation Metrics/0. Confusion Matrix.md
-          - "Precision, Recall, and F1-Score": chapters/3. Supervised Learning/4. Evaluation Metrics/1. Precision Recall F1.md
-          - "ROC Curve and AUC": chapters/3. Supervised Learning/4. Evaluation Metrics/2. ROC and AUC.md
+      - Evaluation Metrics:
+        - "Confusion Matrix": chapters/3. Supervised Learning/4. Evaluation Metrics/0. Confusion Matrix.md
+        - "Precision, Recall, and F1-Score": chapters/3. Supervised Learning/4. Evaluation Metrics/1. Precision Recall F1.md
+        - "ROC Curve and AUC": chapters/3. Supervised Learning/4. Evaluation Metrics/2. ROC and AUC.md
           
-        - Model Selection and Validation:
-          - "Cross-Validation": chapters/3. Supervised Learning/5. Model Selection and Validation/0. Cross-Validation.md
-          - "Hyperparameter Tuning": chapters/3. Supervised Learning/5. Model Selection and Validation/1. Hyperparameter Tuning.md
+      - Model Selection and Validation:
+        - "Cross-Validation": chapters/3. Supervised Learning/5. Model Selection and Validation/0. Cross-Validation.md
+        - "Hyperparameter Tuning": chapters/3. Supervised Learning/5. Model Selection and Validation/1. Hyperparameter Tuning.md
+        - "Learning Curves": chapters/3. Supervised Learning/5. Model Selection and Validation/2. Learning Curves.md
+
+    - Unsupervised Learning:
+      - "Unsupervised Learning Framework": chapters/4. Unsupervised Learning/0. Unsupervised Learning Framework.md
+
+      - Clustering Algorithms:
+        - "k-Means Clustering": chapters/4. Unsupervised Learning/1. Clustering Algorithms/0. k-Means.md
+        - "Hierarchical Clustering": chapters/4. Unsupervised Learning/1. Clustering Algorithms/1. Hierarchical Clustering.md
+        - "DBSCAN": chapters/4. Unsupervised Learning/1. Clustering Algorithms/2. DBSCAN.md
+
+      - Dimensionality Reduction Techniques:
+        - "Principal Component Analysis (PCA)": chapters/4. Unsupervised Learning/2. Dimensionality Reduction Techniques/0. PCA.md
+        - "Introduction to Kernel PCA": chapters/4. Unsupervised Learning/2. Dimensionality Reduction Techniques/1. Kernel PCA.md
+        - "PCA with SVD": chapters/4. Unsupervised Learning/2. Dimensionality Reduction Techniques/2. PCA with SVD.md
+
+      - Mixture Models:
+        - "Gaussian Mixture Models (GMMs)": chapters/4. Unsupervised Learning/3. Mixture Models/0. GMMs.md
+        - "Expectation-Maximisation (EM) Algorithm": chapters/4. Unsupervised Learning/3. Mixture Models/1. EM Algorithm.md
+    
+      - Evaluation Metrics for Unsupervised Learning:
+        - "Silhouette Score": chapters/4. Unsupervised Learning/4. Evaluation Metrics for Unsupervised Learning/0. Silhouette Score.md
+        - "Elbow Method": chapters/4. Unsupervised Learning/4. Evaluation Metrics for Unsupervised Learning/1. Elbow Method.md
+
+    - Semi-Supervised Learning:
+      - "Semi-Supervised Learning Framework": chapters/5. Semi-Supervised Learning/0. Semi-Supervised Learning Framework.md
+      - "Self-Training": chapters/5. Semi-Supervised Learning/1. Self-Training.md
+      - "Consistency Regularisation": chapters/5. Semi-Supervised Learning/2. Consistency Regularisation.md
+      - "Graph-Based Methods": chapters/5. Semi-Supervised Learning/3. Graph-Based Methods.md
+
+    - Learning Parametric Models:
+      - "Parametric vs Nonparametric Models": chapters/6. Learning Parametric Models/0. Parametric vs Nonparametric Models.md
+      - "Maximum Likelihood Estimation (MLE)": chapters/6. Learning Parametric Models/1. MLE.md
+      - "Exponential Family Models": chapters/6. Learning Parametric Models/2. Exponential Family Models.md
+      - "Generalised Linear Models (GLMs)": chapters/6. Learning Parametric Models/3. GLMs.md
+      - "Second order gradient methods": chapters/6. Learning Parametric Models/4. Second Order Gradient Methods.md
+
+    - Artificial Neural Networks:
+      - "The Perceptron": chapters/7. Artificial Neural Networks/0. The Perceptron.md
+      - "Multi-layer Perceptrons (MLPs)": chapters/7. Artificial Neural Networks/1. Multi-layer Perceptrons.md
+      - "Activation Functions": chapters/7. Artificial Neural Networks/2. Activation Functions.md
+      - "Backpropagation": chapters/7. Artificial Neural Networks/3. Backpropagation.md
+      - "Optimisation Algorithms": chapters/7. Artificial Neural Networks/4. Optimisation Algorithms.md
+      - "Regularisation": chapters/7. Artificial Neural Networks/5. Regularisation.md
+
+    - Deep Learning: 
+      - "Representation Learning": chapters/8. Deep Learning/0. Representation Learning.md
+      - "Convolutional Neural Networks (CNNs)": chapters/8. Deep Learning/1. CNNs.md
+      - "Recurrent Neural Networks (RNNs)": chapters/8. Deep Learning/2. RNNs.md
+      - "Sequence Models": chapters/8. Deep Learning/3. Sequence Models.md
+      - "Transformers": chapters/8. Deep Learning/4. Transformers.md
+      - "Training Deep Networks": chapters/8. Deep Learning/5. Training Deep Networks.md
+
+    - Ensemble Methods:
+      - "Bagging and Bootstrap Aggregation": chapters/9. Ensemble Methods/0. Bagging and Bootstrap Aggregation.md
+      - "Boosting Algorithms": chapters/9. Ensemble Methods/1. Boosting Algorithms.md
+
+    - Kernel Methods:
+      - "The Kernel Trick": chapters/10. Kernel Methods/0. Kernel Functions.md
+      - "Support Vector Machines (SVMs) with Kernels": chapters/10. Kernel Methods/1. SVMs with Kernels.md
+      - "Kernel Ridge Regression": chapters/10. Kernel Methods/2. Kernel Ridge Regression.md
+      - "Kernel PCA": chapters/10. Kernel Methods/3. Kernel PCA.md
+
+    - Gaussian Processes:
+      - "Introduction to Gaussian Processes": chapters/11. Gaussian Processes/0. Introduction to Gaussian Processes.md
+      - "Nonparametric Bayesian Modelling": chapters/11. Gaussian Processes/1. Nonparametric Bayesian Modelling.md
+      - "Covariance Functions and Kernels": chapters/11. Gaussian Processes/2. Covariance Functions and Kernels.md
+      - "Gaussian Process Regression": chapters/11. Gaussian Processes/3. Gaussian Process Regression.md
+      - "Gaussian Process Classification": chapters/11. Gaussian Processes/4. Gaussian Process Classification.md
+
+    - Generative Models:
+      - "Generative vs Discriminative Models": chapters/12. Generative Models/0. Generative vs Discriminative Models.md
+      - "Latent Variable Models": chapters/12. Generative Models/1. Latent Variable Models.md
+      - "Variational Autoencoders (VAEs)": chapters/12. Generative Models/2. VAEs.md
+      - "Generative Adversarial Networks (GANs)": chapters/12. Generative Models/3. GANs.md
+      - "Normalising Flows": chapters/12. Generative Models/4. Normalising Flows.md
+
+    - Performance:
+      - "Model Evaluation: Robustness & Stability": chapters/13. Performance/0. Model Evaluation Robustness and Stability.md
+      - "Calibration": chapters/13. Performance/1. Calibration.md
+      - "Fairness, Bias, and Ethics": chapters/13. Performance/2. Fairness Bias and Ethics.md
+      - "Computational Efficiency": chapters/13. Performance/3. Computational Efficiency.md
+
+    
 
       
