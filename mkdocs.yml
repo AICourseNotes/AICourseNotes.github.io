@@ -38,8 +38,8 @@ nav:
           - "Definitions and Notation": chapters/0. Foundations/1. Definitions and Notation.md
 
           - Probability Theory:
-              - "Random variables": chapters/0. Foundations/2. Probability Theory/0. Random Variables.md
-              - "Distributions": chapters/0. Foundations/2. Probability Theory/1. Distributions.md
+              - "Set Theory": chapters/0. Foundations/2. Probability Theory/0. Set Theory.md
+              - "Random Experiments": chapters/0. Foundations/2. Probability Theory/1. Random Experiments.md
               - "Expectation and Variance": chapters/0. Foundations/2. Probability Theory/2. Expectation and Variance.md
               - "Bayes' Theorem": chapters/0. Foundations/2. Probability Theory/3. Bayes Theorem.md
 
