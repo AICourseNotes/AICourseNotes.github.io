@@ -47,9 +47,9 @@ nav:
       - Statistical Inference:
         - "Point Estimation": chapters/0. Foundations/3. Statistical Inference/0. Point Estimation.md
         - "Bias vs Variance": chapters/0. Foundations/3. Statistical Inference/1. Bias vs Variance.md
-        - "Covarariance": chapters/0. Foundations/3. Statistical Inference/2. Covarariance.md
+        - "Covariance": chapters/0. Foundations/3. Statistical Inference/2. Covariance.md
         - "Correlation vs Causation": chapters/0. Foundations/3. Statistical Inference/3. Correlation vs Causation.md
-        - "Confidence Intervals and Uncertainty": chapters/0. Foundations/3. Statistical Inference/4. CI and Uncertainty.md 
+        - "Confidence Intervals and Uncertainty": chapters/0. Foundations/3. Statistical Inference/4. CI and Uncertainty.md
 
       - Linear Algebra:
         - "Vectors and Matrices": chapters/0. Foundations/4. Linear Algebra/0. Vectors and Matrices.md
