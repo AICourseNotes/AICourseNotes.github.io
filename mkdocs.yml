@@ -23,15 +23,19 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
+plugins:
+  - search
+  - mkdocs-jupyter
+
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  - css/custom.css  
+  - css/custom.css
 
 nav:
-  - Home: index.md
+  - Overview: index.md
   - Topics:
       - Foundations:
           - "An Introduction to AI": chapters/0. Foundations/0. Introduction.md
@@ -96,7 +100,7 @@ nav:
           - "Supervised Learning Framework": chapters/3. Supervised Learning/0. Supervised Learning Framework.md
 
           - Non-Parametric Models:
-              - "k-Nearest Neighbors (k-NN)": chapters/3. Supervised Learning/1. Non-Parametric Models/0. k-NN.md
+              - "k-Nearest Neighbors (k-NN)": chapters/3. Supervised Learning/1. Non-Parametric Models/0. k-NN.ipynb
               - "Decision Trees": chapters/3. Supervised Learning/1. Non-Parametric Models/1. Decision Trees.md
               - "Random Forests": chapters/3. Supervised Learning/1. Non-Parametric Models/2. Random Forests.md
 
