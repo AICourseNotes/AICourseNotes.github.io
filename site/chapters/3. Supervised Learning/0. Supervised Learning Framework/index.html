@@ -12,14 +12,14 @@
         <link rel="prev" href="../../2.%20Statistical%20Learning%20Theory/9.%20PAC%20Learning/">
       
       
-        <link rel="next" href="../1.%20Non-Parametric%20Models/0.%20k-NN/">
+        <link rel="next" href="../1.%20Classification%20Models/0.%20KNN%20%28C%29/">
       
       
         
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -74,6 +74,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#what-is-supervised-learning" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -238,7 +243,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    Overview
   
 
     
@@ -466,14 +471,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.%20Foundations/2.%20Probability%20Theory/0.%20Random%20Variables/" class="md-nav__link">
+      <a href="../../0.%20Foundations/2.%20Probability%20Theory/0.%20Set%20Theory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Random variables
+    Set Theory
   
 
     
@@ -494,14 +499,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../0.%20Foundations/2.%20Probability%20Theory/1.%20Distributions/" class="md-nav__link">
+      <a href="../../0.%20Foundations/2.%20Probability%20Theory/1.%20Random%20Experiments/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Distributions
+    Random Experiments
   
 
     
@@ -2059,6 +2064,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -2109,7 +2116,7 @@
   <span class="md-ellipsis">
     
   
-    Non-Parametric Models
+    Classification Models
   
 
     
@@ -2125,7 +2132,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Non-Parametric Models
+    Classification Models
   
 
           </label>
@@ -2138,14 +2145,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.%20Non-Parametric%20Models/0.%20k-NN/" class="md-nav__link">
+      <a href="../1.%20Classification%20Models/0.%20KNN%20%28C%29/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    k-Nearest Neighbors (k-NN)
+    K-Nearest Neighbors (Classification)
   
 
     
@@ -2166,14 +2173,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.%20Non-Parametric%20Models/1.%20Decision%20Trees/" class="md-nav__link">
+      <a href="../1.%20Classification%20Models/1.%20DT%20%28C%29/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Decision Trees
+    Decision Trees (Classification)
   
 
     
@@ -2194,14 +2201,98 @@
   
   
     <li class="md-nav__item">
-      <a href="../1.%20Non-Parametric%20Models/2.%20Random%20Forests/" class="md-nav__link">
+      <a href="../1.%20Classification%20Models/2.%20RF%20%28C%29/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Random Forests
+    Random Forests (Classification)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.%20Classification%20Models/3.%20LogReg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistic Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.%20Classification%20Models/4.%20SVM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support Vector Machines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.%20Classification%20Models/5.%20Naive%20Bayes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Naive Bayes
   
 
     
@@ -2391,7 +2482,7 @@
   <span class="md-ellipsis">
     
   
-    Classification Models
+    Evaluation Metrics
   
 
     
@@ -2407,7 +2498,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Classification Models
+    Evaluation Metrics
   
 
           </label>
@@ -2420,14 +2511,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.%20Classification%20Models/0.%20Logistic%20Regression/" class="md-nav__link">
+      <a href="../3.%20Evaluation%20Metrics/0.%20Confusion%20Matrix/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Logistic Regression
+    Confusion Matrix
   
 
     
@@ -2448,14 +2539,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.%20Classification%20Models/1.%20SVMs/" class="md-nav__link">
+      <a href="../3.%20Evaluation%20Metrics/1.%20Precision%20Recall%20F1/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Support Vector Machines (SVMs)
+    Precision, Recall, and F1-Score
   
 
     
@@ -2476,14 +2567,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.%20Classification%20Models/2.%20Naive%20Bayes/" class="md-nav__link">
+      <a href="../3.%20Evaluation%20Metrics/2.%20ROC%20and%20AUC/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Naive Bayes Classifier
+    ROC Curve and AUC
   
 
     
@@ -2532,7 +2623,7 @@
   <span class="md-ellipsis">
     
   
-    Evaluation Metrics
+    Model Selection and Validation
   
 
     
@@ -2548,147 +2639,6 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Evaluation Metrics
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4.%20Evaluation%20Metrics/0.%20Confusion%20Matrix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Confusion Matrix
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4.%20Evaluation%20Metrics/1.%20Precision%20Recall%20F1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Precision, Recall, and F1-Score
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4.%20Evaluation%20Metrics/2.%20ROC%20and%20AUC/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ROC Curve and AUC
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Model Selection and Validation
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
     Model Selection and Validation
   
 
@@ -2702,7 +2652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../5.%20Model%20Selection%20and%20Validation/0.%20Cross-Validation/" class="md-nav__link">
+      <a href="../4.%20Model%20Selection%20and%20Validation/0.%20Cross-Validation/" class="md-nav__link">
         
   
   
@@ -2730,7 +2680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../5.%20Model%20Selection%20and%20Validation/1.%20Hyperparameter%20Tuning/" class="md-nav__link">
+      <a href="../4.%20Model%20Selection%20and%20Validation/1.%20Hyperparameter%20Tuning/" class="md-nav__link">
         
   
   
@@ -2758,7 +2708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../5.%20Model%20Selection%20and%20Validation/2.%20Learning%20Curves/" class="md-nav__link">
+      <a href="../4.%20Model%20Selection%20and%20Validation/2.%20Learning%20Curves/" class="md-nav__link">
         
   
   
@@ -5073,9 +5023,9 @@
 
 
 
-  <h1>Supervised Learning Framework</h1>
-
-
+<h1 id="what-is-supervised-learning">What is Supervised Learning?<a class="headerlink" href="#what-is-supervised-learning" title="Permanent link">&para;</a></h1>
+<h1 id="regression-vs-classification">Regression vs Classification<a class="headerlink" href="#regression-vs-classification" title="Permanent link">&para;</a></h1>
+<h1 id="parametric-vs-non-parametric-models">Parametric vs non-parametric models<a class="headerlink" href="#parametric-vs-non-parametric-models" title="Permanent link">&para;</a></h1>
 
 
 
@@ -5125,10 +5075,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

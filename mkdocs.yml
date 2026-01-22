@@ -23,23 +23,28 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
+plugins:
+  - search
+  - mkdocs-jupyter
+
 extra_javascript:
+  - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  - css/custom.css  
+  - css/custom.css
 
 nav:
-  - Home: index.md
+  - Overview: index.md
   - Topics:
       - Foundations:
           - "An Introduction to AI": chapters/0. Foundations/0. Introduction.md
           - "Definitions and Notation": chapters/0. Foundations/1. Definitions and Notation.md
 
           - Probability Theory:
-              - "Random variables": chapters/0. Foundations/2. Probability Theory/0. Random Variables.md
-              - "Distributions": chapters/0. Foundations/2. Probability Theory/1. Distributions.md
+              - "Set Theory": chapters/0. Foundations/2. Probability Theory/0. Set Theory.md
+              - "Random Experiments": chapters/0. Foundations/2. Probability Theory/1. Random Experiments.md
               - "Expectation and Variance": chapters/0. Foundations/2. Probability Theory/2. Expectation and Variance.md
               - "Bayes' Theorem": chapters/0. Foundations/2. Probability Theory/3. Bayes Theorem.md
 
@@ -95,30 +100,28 @@ nav:
       - Supervised Learning:
           - "Supervised Learning Framework": chapters/3. Supervised Learning/0. Supervised Learning Framework.md
 
-          - Non-Parametric Models:
-              - "k-Nearest Neighbors (k-NN)": chapters/3. Supervised Learning/1. Non-Parametric Models/0. k-NN.md
-              - "Decision Trees": chapters/3. Supervised Learning/1. Non-Parametric Models/1. Decision Trees.md
-              - "Random Forests": chapters/3. Supervised Learning/1. Non-Parametric Models/2. Random Forests.md
+          - Classification Models:
+              - "K-Nearest Neighbors (Classification)": chapters/3. Supervised Learning/1. Classification Models/0. KNN (C).ipynb
+              - "Decision Trees (Classification)": chapters/3. Supervised Learning/1. Classification Models/1. DT (C).ipynb
+              - "Random Forests (Classification)": chapters/3. Supervised Learning/1. Classification Models/2. RF (C).ipynb
+              - "Logistic Regression": chapters/3. Supervised Learning/1. Classification Models/3. LogReg.ipynb
+              - "Support Vector Machines (SVM)": chapters/3. Supervised Learning/1. Classification Models/4. SVM.ipynb
+              - "Naive Bayes Classifier": chapters/3. Supervised Learning/1. Classification Models/5. Naive Bayes.ipynb
 
           - Regression Models:
               - "Linear Regression": chapters/3. Supervised Learning/2. Regression Models/0. Linear Regression.md
               - "Polynomial Regression": chapters/3. Supervised Learning/2. Regression Models/1. Polynomial Regression.md
               - "Ridge and Lasso Regression": chapters/3. Supervised Learning/2. Regression Models/2. Ridge and Lasso.md
 
-          - Classification Models:
-              - "Logistic Regression": chapters/3. Supervised Learning/3. Classification Models/0. Logistic Regression.md
-              - "Support Vector Machines (SVMs)": chapters/3. Supervised Learning/3. Classification Models/1. SVMs.md
-              - "Naive Bayes Classifier": chapters/3. Supervised Learning/3. Classification Models/2. Naive Bayes.md
-
           - Evaluation Metrics:
-              - "Confusion Matrix": chapters/3. Supervised Learning/4. Evaluation Metrics/0. Confusion Matrix.md
-              - "Precision, Recall, and F1-Score": chapters/3. Supervised Learning/4. Evaluation Metrics/1. Precision Recall F1.md
-              - "ROC Curve and AUC": chapters/3. Supervised Learning/4. Evaluation Metrics/2. ROC and AUC.md
+              - "Confusion Matrix": chapters/3. Supervised Learning/3. Evaluation Metrics/0. Confusion Matrix.md
+              - "Precision, Recall, and F1-Score": chapters/3. Supervised Learning/3. Evaluation Metrics/1. Precision Recall F1.md
+              - "ROC Curve and AUC": chapters/3. Supervised Learning/3. Evaluation Metrics/2. ROC and AUC.md
           
           - Model Selection and Validation:
-              - "Cross-Validation": chapters/3. Supervised Learning/5. Model Selection and Validation/0. Cross-Validation.md
-              - "Hyperparameter Tuning": chapters/3. Supervised Learning/5. Model Selection and Validation/1. Hyperparameter Tuning.md
-              - "Learning Curves": chapters/3. Supervised Learning/5. Model Selection and Validation/2. Learning Curves.md
+              - "Cross-Validation": chapters/3. Supervised Learning/4. Model Selection and Validation/0. Cross-Validation.md
+              - "Hyperparameter Tuning": chapters/3. Supervised Learning/4. Model Selection and Validation/1. Hyperparameter Tuning.md
+              - "Learning Curves": chapters/3. Supervised Learning/4. Model Selection and Validation/2. Learning Curves.md
 
       - Unsupervised Learning:
           - "Unsupervised Learning Framework": chapters/4. Unsupervised Learning/0. Unsupervised Learning Framework.md
