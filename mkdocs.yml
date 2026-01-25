@@ -36,7 +36,7 @@ extra_css:
   - css/custom.css
 
 nav:
-  - Overview: index.md
+  - Overview: index.ipynb
   - Topics:
       - Foundations:
           - "An Introduction to AI": chapters/0. Foundations/0. Introduction.md
