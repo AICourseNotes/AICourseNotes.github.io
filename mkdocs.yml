@@ -5,6 +5,9 @@ theme:
   features:
     - navigation.sections
     - toc.integrate
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
   palette:
     - scheme: slate
       toggle:
@@ -16,10 +19,18 @@ theme:
         name: Switch to dark mode
 
 markdown_extensions:
+  - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: true
+        pygments_lang_class: true
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - admonition
+  - attr_list
   - toc:
       permalink: true
-  - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
 
