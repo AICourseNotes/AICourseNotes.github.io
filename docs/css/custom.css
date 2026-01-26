@@ -69,3 +69,48 @@
   margin-left: -0.3rem;
   margin-right: -0.3rem;
 }
+
+/* Purple "question" admonition (including collapsible ??? question) */
+.md-typeset .admonition.question,
+.md-typeset details.question {
+  border-color: #5c59b7 !important; /* dark */
+}
+
+/* Header background */
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary {
+  background-color: rgba(138, 135, 214, 0.15) !important; /* light tint */
+}
+
+/* Stripe + icon (this is the bit that stays green if not overridden) */
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before {
+  background-color: #8a87d6 !important; /* light */
+}
+
+/* Dropdown arrow (expand/collapse) for ??? question */
+.md-typeset details.question > summary::after {
+  color: #8a87d6 !important;
+}
+
+/* Base HR (default = thin) */
+.md-typeset hr {
+  border: none;
+  height: 1px; /* thin */
+  background-color: var(--md-default-fg-color--lightest);
+  margin: 2rem 0;
+}
+
+/* Thick divider */
+.md-typeset hr.thick {
+  height: 4px;
+  background-color: var(--md-default-fg-color--light);
+}
+
+/* Medium divider (optional) */
+.md-typeset hr.medium {
+  height: 2px;
+  background-color: var(--md-default-fg-color--light);
+}
+
+
