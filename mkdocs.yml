@@ -27,7 +27,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.blocks.caption
   - admonition
+  - md_in_html
   - attr_list
   - toc:
       permalink: true
@@ -37,6 +39,7 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-jupyter
+  - glightbox
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -112,7 +115,7 @@ nav:
           - "Supervised Learning Framework": chapters/3. Supervised Learning/0. Supervised Learning Framework.md
 
           - Classification Models:
-              - "K-Nearest Neighbors (Classification)": chapters/3. Supervised Learning/1. Classification Models/0. KNN (C).ipynb
+              - "K-Nearest Neighbors (Classification)": chapters/3. Supervised Learning/1. Classification Models/0. KNN (C).md
               - "Decision Trees (Classification)": chapters/3. Supervised Learning/1. Classification Models/1. DT (C).ipynb
               - "Random Forests (Classification)": chapters/3. Supervised Learning/1. Classification Models/2. RF (C).ipynb
               - "Logistic Regression": chapters/3. Supervised Learning/1. Classification Models/3. LogReg.ipynb
