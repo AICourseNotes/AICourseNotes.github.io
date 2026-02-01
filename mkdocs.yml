@@ -88,9 +88,7 @@ nav:
               - "Time Series Data": chapters/1. Data/0. Data Types and Structures/1. Time Series Data.md
               - "Image Data": chapters/1. Data/0. Data Types and Structures/2. Image Data.md
         
-          - Exploratory Data Analysis (EDA):
-              - "Data Visualisation": chapters/1. Data/1. Exploratory Data Analysis/0. Data Visualisation.md
-              - "Statistical Summaries": chapters/1. Data/1. Exploratory Data Analysis/1. Statistical Summaries.md
+          - Exploratory Data Analysis (EDA): chapters\1. Data\1. Exploratory Data Analysis.md
         
           - Preprocessing:
               - "Data Cleaning": chapters/1. Data/2. Preprocessing/0. Data Cleaning.md
