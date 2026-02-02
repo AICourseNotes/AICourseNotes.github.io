@@ -31,6 +31,7 @@ markdown_extensions:
   - admonition
   - md_in_html
   - attr_list
+  - tables
   - toc:
       permalink: true
   - pymdownx.arithmatex:
@@ -83,6 +84,7 @@ nav:
               - "Introduction to Gradient Descent": chapters/0. Foundations/5. Calculus and Optimisation Basics/3. Intro Gradient Descent.md
       
       - Data:
+          - Introduction to Data: chapters/1. Data/0. introduction to data.md
           - Data Types and Structures:
               - "Tabular Data": chapters/1. Data/0. Data Types and Structures/0. Tabular Data.md
               - "Time Series Data": chapters/1. Data/0. Data Types and Structures/1. Time Series Data.md
