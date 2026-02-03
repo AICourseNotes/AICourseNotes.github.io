@@ -5,6 +5,9 @@ theme:
   features:
     - navigation.sections
     - toc.integrate
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
   palette:
     - scheme: slate
       toggle:
@@ -16,30 +19,47 @@ theme:
         name: Switch to dark mode
 
 markdown_extensions:
+  - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: true
+        pygments_lang_class: true
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.blocks.caption
   - admonition
+  - md_in_html
+  - attr_list
+  - tables
   - toc:
       permalink: true
-  - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
 
+plugins:
+  - search
+  - mkdocs-jupyter
+  - glightbox
+
 extra_javascript:
+  - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  - css/custom.css  
+  - css/custom.css
 
 nav:
-  - Home: index.md
+  - Overview: index.ipynb
   - Topics:
       - Foundations:
           - "An Introduction to AI": chapters/0. Foundations/0. Introduction.md
           - "Definitions and Notation": chapters/0. Foundations/1. Definitions and Notation.md
 
           - Probability Theory:
-              - "Random variables": chapters/0. Foundations/2. Probability Theory/0. Random Variables.md
-              - "Distributions": chapters/0. Foundations/2. Probability Theory/1. Distributions.md
+              - "Set Theory": chapters/0. Foundations/2. Probability Theory/0. Set Theory.md
+              - "Random Experiments": chapters/0. Foundations/2. Probability Theory/1. Random Experiments.md
               - "Expectation and Variance": chapters/0. Foundations/2. Probability Theory/2. Expectation and Variance.md
               - "Bayes' Theorem": chapters/0. Foundations/2. Probability Theory/3. Bayes Theorem.md
 
@@ -64,14 +84,13 @@ nav:
               - "Introduction to Gradient Descent": chapters/0. Foundations/5. Calculus and Optimisation Basics/3. Intro Gradient Descent.md
       
       - Data:
+          - Introduction to Data: chapters/1. Data/0. introduction to data.md
           - Data Types and Structures:
               - "Tabular Data": chapters/1. Data/0. Data Types and Structures/0. Tabular Data.md
               - "Time Series Data": chapters/1. Data/0. Data Types and Structures/1. Time Series Data.md
               - "Image Data": chapters/1. Data/0. Data Types and Structures/2. Image Data.md
         
-          - Exploratory Data Analysis (EDA):
-              - "Data Visualisation": chapters/1. Data/1. Exploratory Data Analysis/0. Data Visualisation.md
-              - "Statistical Summaries": chapters/1. Data/1. Exploratory Data Analysis/1. Statistical Summaries.md
+          - Exploratory Data Analysis (EDA): chapters\1. Data\1. Exploratory Data Analysis.md
         
           - Preprocessing:
               - "Data Cleaning": chapters/1. Data/2. Preprocessing/0. Data Cleaning.md
@@ -95,30 +114,28 @@ nav:
       - Supervised Learning:
           - "Supervised Learning Framework": chapters/3. Supervised Learning/0. Supervised Learning Framework.md
 
-          - Non-Parametric Models:
-              - "k-Nearest Neighbors (k-NN)": chapters/3. Supervised Learning/1. Non-Parametric Models/0. k-NN.md
-              - "Decision Trees": chapters/3. Supervised Learning/1. Non-Parametric Models/1. Decision Trees.md
-              - "Random Forests": chapters/3. Supervised Learning/1. Non-Parametric Models/2. Random Forests.md
+          - Classification Models:
+              - "K-Nearest Neighbors (Classification)": chapters/3. Supervised Learning/1. Classification Models/0. KNN (C).md
+              - "Decision Trees (Classification)": chapters/3. Supervised Learning/1. Classification Models/1. DT (C).ipynb
+              - "Random Forests (Classification)": chapters/3. Supervised Learning/1. Classification Models/2. RF (C).ipynb
+              - "Logistic Regression": chapters/3. Supervised Learning/1. Classification Models/3. LogReg.ipynb
+              - "Support Vector Machines (SVM)": chapters/3. Supervised Learning/1. Classification Models/4. SVM.ipynb
+              - "Naive Bayes Classifier": chapters/3. Supervised Learning/1. Classification Models/5. Naive Bayes.ipynb
 
           - Regression Models:
               - "Linear Regression": chapters/3. Supervised Learning/2. Regression Models/0. Linear Regression.md
               - "Polynomial Regression": chapters/3. Supervised Learning/2. Regression Models/1. Polynomial Regression.md
               - "Ridge and Lasso Regression": chapters/3. Supervised Learning/2. Regression Models/2. Ridge and Lasso.md
 
-          - Classification Models:
-              - "Logistic Regression": chapters/3. Supervised Learning/3. Classification Models/0. Logistic Regression.md
-              - "Support Vector Machines (SVMs)": chapters/3. Supervised Learning/3. Classification Models/1. SVMs.md
-              - "Naive Bayes Classifier": chapters/3. Supervised Learning/3. Classification Models/2. Naive Bayes.md
-
           - Evaluation Metrics:
-              - "Confusion Matrix": chapters/3. Supervised Learning/4. Evaluation Metrics/0. Confusion Matrix.md
-              - "Precision, Recall, and F1-Score": chapters/3. Supervised Learning/4. Evaluation Metrics/1. Precision Recall F1.md
-              - "ROC Curve and AUC": chapters/3. Supervised Learning/4. Evaluation Metrics/2. ROC and AUC.md
+              - "Confusion Matrix": chapters/3. Supervised Learning/3. Evaluation Metrics/0. Confusion Matrix.md
+              - "Precision, Recall, and F1-Score": chapters/3. Supervised Learning/3. Evaluation Metrics/1. Precision Recall F1.md
+              - "ROC Curve and AUC": chapters/3. Supervised Learning/3. Evaluation Metrics/2. ROC and AUC.md
           
           - Model Selection and Validation:
-              - "Cross-Validation": chapters/3. Supervised Learning/5. Model Selection and Validation/0. Cross-Validation.md
-              - "Hyperparameter Tuning": chapters/3. Supervised Learning/5. Model Selection and Validation/1. Hyperparameter Tuning.md
-              - "Learning Curves": chapters/3. Supervised Learning/5. Model Selection and Validation/2. Learning Curves.md
+              - "Cross-Validation": chapters/3. Supervised Learning/4. Model Selection and Validation/0. Cross-Validation.md
+              - "Hyperparameter Tuning": chapters/3. Supervised Learning/4. Model Selection and Validation/1. Hyperparameter Tuning.md
+              - "Learning Curves": chapters/3. Supervised Learning/4. Model Selection and Validation/2. Learning Curves.md
 
       - Unsupervised Learning:
           - "Unsupervised Learning Framework": chapters/4. Unsupervised Learning/0. Unsupervised Learning Framework.md
