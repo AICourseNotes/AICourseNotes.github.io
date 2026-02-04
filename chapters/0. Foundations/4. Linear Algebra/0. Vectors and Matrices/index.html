@@ -82,6 +82,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#vectors" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -849,6 +854,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vectors and Matrices
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -866,6 +891,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intuition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intuition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Vector?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vector Notation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-vector-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Vector Operations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#length-and-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Length and Distance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vectors-in-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vectors in Machine Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theory-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Theory Problems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concluding-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concluding Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4968,10 +5100,87 @@
 
 
 
-  <h1>Vectors and Matrices</h1>
-
-<!-- Vectors and Matrices.md --><p>$A v = \lambda v $</p>
-<p>$A v = \lambda v $</p>
+<!-- Vectors and Matrices.md --><h1 id="vectors">Vectors<a class="headerlink" href="#vectors" title="Permanent link">¶</a></h1>
+<p>Vectors are the basic building blocks of linear algebra and machine learning. They are how we represent data points, directions, and features numerically. Before working with distances, models, or transformations, we need to be comfortable thinking in terms of vectors.</p>
+<h2 id="intuition">Intuition<a class="headerlink" href="#intuition" title="Permanent link">¶</a></h2>
+<p><em>Suppose you are describing a student using three pieces of information: height (cm), hours studied per week, and exam score.</em></p>
+<p>One student might be described as:</p>
+<div class="arithmatex">\[
+(170,\;15,\;82)
+\]</div>
+<p>Each number alone tells you something, but together they describe a single object. This ordered collection of numbers is called a <strong>vector</strong>.</p>
+<p>In machine learning:
+- Each data point is a vector<br>
+- Each feature corresponds to one component of the vector<br>
+- Similarity and distance are computed between vectors  </p>
+<p>This is exactly what happens in <span class="arithmatex">\(k\)</span>-Nearest Neighbours, where we compare one vector to others to decide how similar they are.</p>
+<h2 id="what-is-a-vector">What Is a Vector?<a class="headerlink" href="#what-is-a-vector" title="Permanent link">¶</a></h2>
+<p>A <strong>vector</strong> is an ordered list of numbers.</p>
+<p>Examples:
+- A 2D vector: <span class="arithmatex">\((x, y)\)</span>
+- A 3D vector: <span class="arithmatex">\((x, y, z)\)</span>
+- A vector with <span class="arithmatex">\(n\)</span> features: <span class="arithmatex">\((x_1, x_2, \dots, x_n)\)</span></p>
+<p>Key ideas:
+- A <strong>scalar</strong> is a single number<br>
+- A <strong>vector</strong> is multiple numbers grouped together<br>
+- The <strong>dimension</strong> of a vector is the number of components it has  </p>
+<p>A vector can be interpreted in two common ways:
+- As a <strong>point in space</strong> (a data point)
+- As a <strong>direction and magnitude</strong> (a displacement)</p>
+<p>In machine learning, we almost always think of vectors as <strong>data points</strong>.</p>
+<h2 id="vector-notation">Vector Notation<a class="headerlink" href="#vector-notation" title="Permanent link">¶</a></h2>
+<p>Vectors can be written in several equivalent ways:</p>
+<ul>
+<li>Parentheses: <span class="arithmatex">\((x, y, z)\)</span></li>
+<li>Column vectors:
+[
+\begin{bmatrix}
+x \
+y \
+z
+\end{bmatrix}
+]</li>
+</ul>
+<p>Throughout these notes:
+- We treat vectors as <strong>column vectors</strong>
+- We use parentheses when writing vectors inline</p>
+<p>This convention matters later when we multiply vectors by matrices.</p>
+<h2 id="basic-vector-operations">Basic Vector Operations<a class="headerlink" href="#basic-vector-operations" title="Permanent link">¶</a></h2>
+<p>Planned concepts:
+- Vector addition<br>
+- Scalar multiplication<br>
+- What these operations mean geometrically  </p>
+<p>(Details and worked examples will be added later.)</p>
+<h2 id="length-and-distance">Length and Distance<a class="headerlink" href="#length-and-distance" title="Permanent link">¶</a></h2>
+<p>Planned concepts:
+- Length (magnitude) of a vector<br>
+- Distance between two vectors<br>
+- Why distance matters for algorithms like KNN  </p>
+<h2 id="vectors-in-machine-learning">Vectors in Machine Learning<a class="headerlink" href="#vectors-in-machine-learning" title="Permanent link">¶</a></h2>
+<p>Key connections:
+- One row of a dataset = one vector<br>
+- Number of features = vector dimension<br>
+- Comparing data points = comparing vectors  </p>
+<p>Every supervised learning algorithm starts with vectors.</p>
+<h2 id="theory-problems">Theory Problems<a class="headerlink" href="#theory-problems" title="Permanent link">¶</a></h2>
+<div class="admonition question">
+<p class="admonition-title">Theory Question 1</p>
+<p>What does the dimension of a vector represent?</p>
+</div>
+<details class="note">
+<summary>Solution</summary>
+<p>The dimension of a vector is the number of components (features) it contains.</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Theory Question 2</p>
+<p>In machine learning, what does a single vector usually represent?</p>
+</div>
+<details class="note">
+<summary>Solution</summary>
+<p>A single data point or observation.</p>
+</details>
+<h2 id="concluding-notes">Concluding Notes<a class="headerlink" href="#concluding-notes" title="Permanent link">¶</a></h2>
+<p>Vectors are the language used to describe data in machine learning. Once vectors are understood, matrices, transformations, and models become natural extensions rather than new ideas.</p>
 
 
 
