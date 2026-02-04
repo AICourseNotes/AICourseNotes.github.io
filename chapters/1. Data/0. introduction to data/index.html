@@ -1288,95 +1288,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Common Terminology">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#observations-data-points" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Observations (Data Points)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Features
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#labels-targets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Labels (Targets)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#types-of-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Types of Data
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Types of Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#structured-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Structured Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unstructured-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unstructured Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#categorical-and-numerical-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Categorical and Numerical Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -5111,93 +5022,114 @@
 
 
 <h1 id="introduction-to-data">Introduction to Data<a class="headerlink" href="#introduction-to-data" title="Permanent link">¶</a></h1>
-<p>Welcome to data. In this context, <em>data</em> refers to the collection of observations or measurements that we use to train, test, and validate our models. While algorithms often get the spotlight, data is arguably the most important part of everything we do in AI. The performance of any model is heavily influenced by both the quality and quantity of the data it learns from.</p>
-<p>In a university setting, we’re often lucky. Datasets are usually provided for us, they’re clean enough to work with, and they contain the information we need to complete an assignment successfully. This makes it easy to focus on learning the mechanics of an algorithm without worrying too much about where the data came from. In the real world, things are rarely that simple. Data can be difficult to collect, incomplete, or missing important information altogether. You might have too little data, poorly chosen features, or measurements that don’t quite capture what you care about.</p>
-<p>This section of the notes is designed to help you build good intuition around data, how to work with what you’re given, and how to make sensible decisions even when the data is imperfect. Getting this part right will make every model you build more reliable, interpretable, and useful.</p>
+<p>Welcome to data. In this context, <em>data</em> refers to the collection of observations or measurements that we use to train, test, and validate our models. While algorithms often get the spotlight, data is arguably the most important part of everything we do in AI. The performance of any model is heavily influenced by both the quality and quantity of the data it learns from. This section of the notes is designed to help you build intuition when working with data. </p>
 <hr class="thick">
 
 <h2 id="common-terminology">Common Terminology<a class="headerlink" href="#common-terminology" title="Permanent link">¶</a></h2>
 <p>Before we go any further, let’s quickly define a few terms that will appear constantly throughout these notes.</p>
-<h4 id="observations-data-points">Observations (Data Points)<a class="headerlink" href="#observations-data-points" title="Permanent link">¶</a></h4>
-<p>An observation, also called a data point, corresponds to a single example in your dataset. In a table, this is typically a single row. </p>
-<p>As an example, an observation could look like:</p>
+<div class="admonition quote">
+<p class="admonition-title">Observations</p>
+<p>Observations are the individual data points, examples, or records used to train, test, or evaluate a model.</p>
+<p>As an example, consider the following table:</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: center;">Student ID</th>
 <th style="text-align: center;">First Name</th>
 <th style="text-align: center;">Last Name</th>
-<th style="text-align: center;">Gender</th>
+<th style="text-align: center;">GPA</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: center;">12345678</td>
 <td style="text-align: center;">Adam</td>
-<td style="text-align: center;">Smith</td>
-<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Johnson</td>
+<td style="text-align: center;">4.8</td>
+</tr>
+<tr>
+<td style="text-align: center;">23456781</td>
+<td style="text-align: center;">Ben</td>
+<td style="text-align: center;">Stiller</td>
+<td style="text-align: center;">6.4</td>
+</tr>
+<tr>
+<td style="text-align: center;">34567812</td>
+<td style="text-align: center;">Clair</td>
+<td style="text-align: center;">Miller</td>
+<td style="text-align: center;">5.3</td>
 </tr>
 </tbody>
 </table>
-<p>where all the information above relates to the same person.</p>
-<h4 id="features">Features<a class="headerlink" href="#features" title="Permanent link">¶</a></h4>
-<p>A feature is an individual measurable property of an observation. In the table above, the features would be "Student ID", "First Name", "Last Name" and "Gender". Features are usually stored as columns.</p>
-<h4 id="labels-targets">Labels (Targets)<a class="headerlink" href="#labels-targets" title="Permanent link">¶</a></h4>
-<p>A label (or target) is the value we want to predict.</p>
-<h2 id="types-of-data">Types of Data<a class="headerlink" href="#types-of-data" title="Permanent link">¶</a></h2>
-<p>The type of data you are working with influences how you store it, how you explore it, and which models are appropriate. Before building anything, it’s worth understanding what kind of data you actually have in front of you. Most of the data you will encounter can be grouped into a few broad categories.</p>
-<h3 id="structured-data">Structured Data<a class="headerlink" href="#structured-data" title="Permanent link">¶</a></h3>
-<p>Structured data is the most common starting point, especially in coursework and early projects. This is data that fits neatly into a table, where each row represents an observation and each column represents a feature. Here is an example of structured data</p>
+<p>where an observation from this table would be:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Index</th>
-<th style="text-align: center;">Height (cm)</th>
-<th style="text-align: center;">Weight (kg)</th>
+<th style="text-align: center;">Student ID</th>
+<th style="text-align: center;">First Name</th>
+<th style="text-align: center;">Last Name</th>
+<th style="text-align: center;">GPA</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">177</td>
-<td style="text-align: center;">------</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">191</td>
-<td style="text-align: center;">------</td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">173</td>
-<td style="text-align: center;">------</td>
-</tr>
-<tr>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">158</td>
-<td style="text-align: center;">------</td>
-</tr>
-<tr>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">167</td>
-<td style="text-align: center;">------</td>
-</tr>
-<tr>
-<td style="text-align: center;">-----</td>
-<td style="text-align: center;">------</td>
-<td style="text-align: center;">------</td>
+<td style="text-align: center;">12345678</td>
+<td style="text-align: center;">Adam</td>
+<td style="text-align: center;">Johnson</td>
+<td style="text-align: center;">4.8</td>
 </tr>
 </tbody>
 </table>
-<h3 id="unstructured-data">Unstructured Data<a class="headerlink" href="#unstructured-data" title="Permanent link">¶</a></h3>
-<p>Unstructured data does not naturally fit into rows and columns. Instead, it often comes in forms like text, images, audio, or video.</p>
-<h3 id="categorical-and-numerical-data">Categorical and Numerical Data<a class="headerlink" href="#categorical-and-numerical-data" title="Permanent link">¶</a></h3>
-<p>Regardless of whether data is structured or unstructured, features themselves can usually be described as either numerical or categorical. </p>
-<p><strong>Numerical data</strong> represents quantities that can be measured, such as height, temperature, or time. <strong>Categorical data</strong> represents groupings or labels, such as colour, country, or product type.</p>
-<p>Handling categorical data often requires additional processing, such as encoding categories as numbers, which will be covered further on within these notes. </p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Features</p>
+<p>A feature is an individual measurable property or characteristic of the observations. As an example, the features of the table:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Student ID</th>
+<th style="text-align: center;">First Name</th>
+<th style="text-align: center;">Last Name</th>
+<th style="text-align: center;">GPA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">12345678</td>
+<td style="text-align: center;">Adam</td>
+<td style="text-align: center;">Johnson</td>
+<td style="text-align: center;">4.8</td>
+</tr>
+<tr>
+<td style="text-align: center;">23456781</td>
+<td style="text-align: center;">Ben</td>
+<td style="text-align: center;">Stiller</td>
+<td style="text-align: center;">6.4</td>
+</tr>
+<tr>
+<td style="text-align: center;">34567812</td>
+<td style="text-align: center;">Clair</td>
+<td style="text-align: center;">Miller</td>
+<td style="text-align: center;">5.3</td>
+</tr>
+</tbody>
+</table>
+<p>would be "Student ID", "First Name", "Last Name" and "GPA".</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Labels</p>
+<p>The label, also known as the "dependent variable", "response variable", "output variable", or "target" is the specific outcome or metric that a model is trained to predict or classify based on a given set of features.</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Categorical and Numerical Data</p>
+<p>Features can be described as either numerical or categorical. </p>
+<p>Numerical data represents quantities that can be measured, such as height, temperature, or time.</p>
+<p>Categorical data represents groupings, such as brand, country, or gender.  </p>
 <div class="admonition warning">
 <p class="admonition-title">Note</p>
-<p>Treating categorical values as raw numbers without care can lead to misleading results. It is common practice to label binary results as "1" or "0". These results are categorical values, and should not be treated as numbers. </p>
+<p>It is common practice to label binary results as "1" or "0". These recordings represent categorical data and should not be treated as numerical data. </p>
+<p>Treating categorical data as numerical data will likely invalidate your results.</p>
+</div>
 </div>
 
 
